@@ -1,0 +1,18 @@
+.rates-page { background: var(--bg); padding-bottom: 60px; }
+.rates-date-badge { display: inline-block; background: rgba(255,255,255,0.15); border-radius: var(--radius-full); padding: 5px 14px; font-size: 0.82rem; font-weight: 500; margin-top: 12px; }
+.rates-container { padding-top: 40px; }
+.rates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 48px; }
+.rate-card { padding: 20px; cursor: pointer; border: 1.5px solid var(--border); transition: var(--transition); }
+.rate-card-active { border-color: var(--accent); background: linear-gradient(135deg, #eaf4ff, white); }
+.rate-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.rate-card-type { font-size: 0.85rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2px; }
+.rate-card-thickness { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 12px; }
+.rate-card-price { font-size: 1.6rem; font-weight: 800; color: var(--primary); }
+.rate-card-price span { font-size: 0.75rem; font-weight: 400; color: var(--text-muted); }
+.rate-card-change { font-size: 0.82rem; font-weight: 600; margin-top: 6px; }
+.rate-card-change.up { color: var(--success); }
+.rate-card-change.down { color: var(--danger); }
+.rates-chart-section { background: white; border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border); margin-bottom: 32px; }
+.rates-chart-section h2 { margin-bottom: 4px; }
+.chart-wrap { margin-top: 8px; }
+.rates-disclaimer { background: var(--bg-subtle); border-radius: var(--radius-md); padding: 16px 20px; font-size: 0.85rem; color: var(--text-secondary); border-left: 4px solid var(--accent); }
