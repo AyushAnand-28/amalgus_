@@ -34,5 +34,14 @@ app.use('/api/estimate', require('./routes/estimateRoutes'));
 
 app.get('/api/health', (req, res) => res.json({ status: 'AmalGus API running ✅' }));
 
+app.get('/api/run-seed', (req, res) => {
+  const { exec } = require('child_process');
+  exec('npm run seed', (error, stdout, stderr) => {
+    if (error) {
+      return res.status(500).send(`Error: ${error.message}`);
+    }
+    res.send(`<h1>Database Seeded Successfully!</h1><pre>${stdout}</pre>`);
+  });
+});
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
