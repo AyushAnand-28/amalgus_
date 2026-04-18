@@ -1,0 +1,42 @@
+.ai-page { background: var(--bg); padding-bottom: 60px; }
+.ai-hero-badge { display: inline-block; background: var(--gold); color: var(--primary-dark); padding: 4px 14px; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; margin-bottom: 12px; }
+.ai-container { max-width: 900px; margin: 0 auto; padding-top: 40px; }
+.ai-form { background: white; border-radius: var(--radius-lg); border: 1.5px solid var(--border); padding: 24px; box-shadow: var(--shadow-md); margin-bottom: 24px; }
+.ai-textarea { width: 100%; border: 1.5px solid var(--border); border-radius: var(--radius-md); padding: 16px; font-size: 1rem; color: var(--text-primary); resize: vertical; outline: none; transition: var(--transition); line-height: 1.6; }
+.ai-textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(46,156,202,0.12); }
+.ai-form-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; flex-wrap: wrap; gap: 12px; }
+.ai-examples-hint { font-size: 0.8rem; color: var(--text-muted); font-style: italic; }
+.example-chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+.example-chip { background: white; border: 1.5px solid var(--border); border-radius: var(--radius-full); padding: 8px 14px; font-size: 0.8rem; color: var(--text-secondary); transition: var(--transition); text-align: left; }
+.example-chip:hover { border-color: var(--accent); color: var(--accent); background: #f0f8ff; }
+.ai-loading { text-align: center; padding: 60px; }
+.ai-loading-anim { font-size: 3rem; animation: spin 2s linear infinite; display: inline-block; margin-bottom: 16px; }
+.ai-error { background: #fde8e6; border: 1px solid #f5c6c2; border-radius: var(--radius-md); padding: 16px; color: var(--danger); margin-bottom: 24px; }
+.ai-result { background: white; border-radius: var(--radius-lg); border: 1.5px solid var(--border); padding: 32px; box-shadow: var(--shadow-md); }
+.result-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; gap: 16px; }
+.result-header h2 { margin-bottom: 6px; }
+.result-query { font-size: 0.9rem; color: var(--text-muted); font-style: italic; }
+.rec-main-card { display: flex; align-items: flex-start; gap: 24px; background: linear-gradient(135deg, #eaf4ff, #f0f9ff); border-radius: var(--radius-md); padding: 24px; margin-bottom: 24px; border: 1px solid rgba(46,156,202,0.2); }
+.rec-glass-icon { font-size: 3.5rem; }
+.rec-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 4px; }
+.rec-glass-type { font-size: 1.6rem; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+.rec-thickness, .rec-process, .rec-price-range { font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.rec-reason { background: var(--bg-subtle); border-radius: var(--radius-md); padding: 20px; margin-bottom: 20px; }
+.rec-reason h4 { margin-bottom: 10px; color: var(--primary); }
+.rec-reason p { color: var(--text-secondary); line-height: 1.7; }
+.rec-tips { margin-bottom: 20px; }
+.rec-tips h4 { margin-bottom: 12px; color: var(--primary); }
+.rec-tips ul { list-style: disc; padding-left: 20px; }
+.rec-tips li { color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 8px; line-height: 1.6; }
+.rec-allied { margin-bottom: 24px; }
+.rec-allied h4 { margin-bottom: 12px; color: var(--primary); }
+.allied-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.allied-chip { background: white; border: 1.5px solid var(--accent); border-radius: var(--radius-full); padding: 5px 14px; font-size: 0.8rem; color: var(--accent); font-weight: 600; }
+.rec-products { margin-bottom: 24px; border-top: 1px solid var(--border); padding-top: 24px; }
+.rec-products h4 { margin-bottom: 4px; }
+.rec-cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 24px; border-top: 1px solid var(--border); padding-top: 24px; }
+@media (max-width: 640px) {
+  .ai-form-footer { flex-direction: column; align-items: flex-start; }
+  .rec-main-card { flex-direction: column; }
+  .result-header { flex-direction: column; }
+}
