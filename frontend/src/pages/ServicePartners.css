@@ -1,0 +1,24 @@
+.partners-page { background: var(--bg); padding-bottom: 60px; }
+.partners-container { padding-top: 32px; }
+.partners-filters { background: white; border-radius: var(--radius-md); padding: 20px; border: 1px solid var(--border); margin-bottom: 28px; display: flex; flex-direction: column; gap: 14px; }
+.filter-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.filter-label { font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); min-width: 60px; }
+.filter-chip { padding: 6px 14px; border-radius: var(--radius-full); border: 1.5px solid var(--border); background: white; font-size: 0.8rem; color: var(--text-secondary); transition: var(--transition); }
+.filter-chip.active { border-color: var(--accent); background: var(--accent); color: white; }
+.filter-chip:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+.partner-card { padding: 24px; display: flex; flex-direction: column; gap: 12px; }
+.partner-header { display: flex; align-items: center; gap: 14px; }
+.partner-avatar { width: 48px; height: 48px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 700; flex-shrink: 0; }
+.partner-name { font-size: 1rem; font-weight: 700; color: var(--text-primary); }
+.partner-spec { font-size: 0.72rem; margin-top: 3px; }
+.verified-badge { margin-left: auto; font-size: 1.1rem; }
+.partner-meta { display: flex; gap: 16px; font-size: 0.82rem; color: var(--text-muted); }
+.partner-rating { display: flex; align-items: center; gap: 6px; }
+.rating-val { font-weight: 700; font-size: 0.9rem; }
+.rating-count { font-size: 0.78rem; color: var(--text-muted); }
+.partner-bio { font-size: 0.83rem; color: var(--text-secondary); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.partner-price { font-size: 0.85rem; color: var(--text-secondary); }
+.partner-certs { display: flex; flex-wrap: wrap; gap: 6px; }
+.cert-chip { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-full); padding: 2px 9px; font-size: 0.72rem; color: var(--text-muted); }
+.partner-availability { font-size: 0.82rem; font-weight: 600; }
+.partner-actions { display: flex; gap: 10px; margin-top: 4px; }
