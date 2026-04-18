@@ -1,0 +1,13 @@
+{
+  "name": "amalgus",
+  "version": "1.0.0",
+  "description": "AmalGus - World's First B2B2C Glass Marketplace",
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "seed": "cd backend && npm run seed",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
